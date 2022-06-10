@@ -11,7 +11,7 @@ terraform {
 provider "vcd" {
   user                 = var.vcd_user
   password             = var.vcd_pass
-  org                  = "System"
+  org                  = var.vcd_org
   vdc                  = var.vdc_name
   url                  = var.vcd_url
   max_retry_timeout    = var.vcd_max_retry_timeout
