@@ -1,8 +1,8 @@
 
 # Get the vcd network as a data source
-data "vcd_network_direct" "netdirect" {
-  name = var.extnet_name
-}
+# data "vcd_network_direct" "netdirect" {
+#   name = var.extnet_name
+# }
 
 # Create the VM in the vApp
 resource "vcd_vapp_vm" "vm1" {
@@ -18,7 +18,7 @@ resource "vcd_vapp_vm" "vm1" {
 
   # Map the network from the data source to the VM
   network {
-      name = data.vcd_network_direct.net.name
+      name = var.extnet_name
       type = "org"
       ip = var.network_ip
       ip_allocation_mode = "MANUAL"
