@@ -29,121 +29,55 @@ variable "vcd_allow_unverified_ssl" {
     description = "vCloud allow unverified ssl"
 }
 
-# vCloud Director Organization Variables
-variable "org_name" {
+
+variable "vcd_org" {
     type        = string
     description = "Organization Name"
 }
 
-variable "org_full_name" {
-    type        = string
-    description = "Organization Full Name"
-}
-
-variable "org_description" {
-    type        = string
-    description = "Organization Description"
-}
-
-# vCloud Director Organization VDC Variables
-variable "vdc_alloc_model" {
-    type        = string
-    default     = "AllocationVApp"
-    description = "VDC Allocation Model"
-}
-variable "vdc_net_pool" {
-        type        = string
-        default     = "General"
-        description = "VDC Network Pool"
-}
-variable "vdc_pvdc_name" {
-        type        = string
-        default     = "Dijitalisyerim"
-        description = "VDC Provider VDC Name"
-}
-variable "vdc_description" {
-    type        = string
-    description = "VDC Description"
-}
 variable "vdc_name" {
     type        = string
     description = "VDC Name"
 }
-variable "vdc_storage_name" {
-        type        = string
-        default     = "*"
-        description = "VDC Storage Policy"
-}
-variable "vdc_storage_limit" {
-        type        = string
-        description = "VDC Storage Limit"
+variable "vcd_vapp_name" {
+    type        = string
+    description = "vCD vApp Name"
 }
 
-
-# vCloud Director External Network
-variable "extnet_name" {
+variable "var.extnet_name" {
     type        = string
     description = "External Network Name"
 }
-variable "extnet_description" {
+variable "var.vm_name" {
     type        = string
-    description = "External Network Description"
+    description = "vM Adını Giriniz."
 }
-variable "extnet_gw" {
+variable "var.catalog_name" {
     type        = string
-    default     = "81.8.0.125"
-    description = "External Network Gateway"
+    description = "Catalog Adı"
 }
-variable "extnet_mask" {
+variable "var.template_name" {
     type        = string
-    default     = "255.255.255.0"
-    description = "External Network Mask"
+    description = "Template Adı"
 }
-variable "extnet_dns1" {
+variable "var.vm_computer_name" {
     type        = string
-    default     = "1.1.1.1"
-    description = "External Network DNS1"
+    description = "vM Bilgisayar Adı"
 }
-variable "extnet_dns2" {
+variable "var.vm_memory" {
     type        = string
-    default     = "1.0.0.1"   
-    description = "External Network DNS2"
+    description = "vM Memory (MB Cinsinde 1GB = 1024)"
 }
-variable "extnet_suffix" {
+variable "var.vm_cpus" {
     type        = string
-    default     = ""
-    description = "External Network DNS Suffix"
+    description = "vM Cpu Adedi"
 }
-variable "extnet_ip_pool_start" {
+variable "var.vm_cpucore" {
     type        = string
-    description = "External Network IP Pool Start Address"
+    description = "vM Cpu Core"
 }
-variable "extnet_ip_pool_end" {
+variable "var.network_ip" {
     type        = string
-    description = "External Network IP Pool End Address"
+    description = "vM Network IP"
 }
 
-variable "vapp_name" {
-    type        = string
-    description = "vApp Uygulama adını giriniz."
-}
-variable "vapp_description" {
-    type        = string
-    description = "vApp Açıklamasını giriniz."
-}
-
-variable "vapp_vm_name" {
-    type        = string
-    description = "vM adını giriniz.."
-}
-variable "vapp_computer_name" {
-    type        = string
-    description = "vM Computer Name Giriniz.."
-}
-
-
-variable "extnet_vcenter" {
-    type        = string
-    default     = "vCenter"
-    description = "External Network vCenter Server"
-}
