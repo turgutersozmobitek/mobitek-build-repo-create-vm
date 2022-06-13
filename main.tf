@@ -4,15 +4,6 @@
 #   name = var.extnet_name
 # }
 
-resource "vcd_org" "vcd_org" {
-  name                = "VodafoneORG"
-}
-
-resource "vcd_org_vdc" "vcd_org_vdc" {
-  name        = "VodafoneVDC"
-  }
-
-
 # Create the VM in the vApp
 resource "vcd_vapp_vm" "vm1" {
   vapp_name = var.vcd_vapp_name
