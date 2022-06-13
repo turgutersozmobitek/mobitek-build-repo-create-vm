@@ -44,40 +44,39 @@ variable "vcd_vapp_name" {
     description = "vCD vApp Name"
 }
 
-variable "var.extnet_name" {
+variable "extnet_name" {
     type        = string
     description = "External Network Name"
 }
-variable "var.vm_name" {
+variable "vm_name" {
     type        = string
     description = "vM Adını Giriniz."
 }
-variable "var.catalog_name" {
+variable "catalog_name" {
     type        = string
     description = "Catalog Adı"
 }
-variable "var.template_name" {
+variable "template_name" {
     type        = string
     description = "Template Adı"
 }
-variable "var.vm_computer_name" {
+variable "vm_computer_name" {
     type        = string
     description = "vM Bilgisayar Adı"
 }
-variable "var.vm_memory" {
+variable "vm_memory" {
     type        = string
     description = "vM Memory (MB Cinsinde 1GB = 1024)"
 }
-variable "var.vm_cpus" {
+variable "vm_cpus" {
     type        = string
     description = "vM Cpu Adedi"
 }
-variable "var.vm_cpucore" {
+variable "vm_cpucore" {
     type        = string
     description = "vM Cpu Core"
 }
-variable "var.network_ip" {
+variable "network_ip" {
     type        = string
     description = "vM Network IP"
 }
-
