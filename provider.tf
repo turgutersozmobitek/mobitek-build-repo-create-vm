@@ -17,3 +17,5 @@ provider "vcd" {
   vapp                 = var.vcd_vapp_name
   max_retry_timeout    = var.vcd_max_retry_timeout
   allow_unverified_ssl = var.vcd_allow_unverified_ssl
+
+}
