@@ -25,6 +25,6 @@ resource "vcd_vapp_vm" "vm1" {
       is_primary = true
   }
 
-  depends_on = [vcd_vapp.vm1]
+#  depends_on = [vcd_vapp.vm1]
 }
 
