@@ -6,7 +6,7 @@
 
 # Create the VM in the vApp
 resource "vcd_vapp_vm" "vm1" {
-  vapp_name = var.vapp_name
+  vapp_name = var.vcd_vapp_name
   name =  var.vm_name
   catalog_name = var.catalog_name
   template_name = var.template_name
