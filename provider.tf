@@ -14,7 +14,6 @@ provider "vcd" {
   org                  = var.vcd_org
   vdc                  = var.vdc_name
   url                  = var.vcd_url
-  vapp                 = var.vcd_vapp_name
   max_retry_timeout    = var.vcd_max_retry_timeout
   allow_unverified_ssl = var.vcd_allow_unverified_ssl
 
