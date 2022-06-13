@@ -18,7 +18,7 @@ resource "vcd_vapp_vm" "vm1" {
 
   # Map the network from the data source to the VM
   network {
-      name = data.vcd_network_routed.net.name
+      name = data.vcd_network_direct.net.name
       type = "org"
       ip = var.network_ip
       ip_allocation_mode = "MANUAL"
