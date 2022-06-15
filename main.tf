@@ -51,6 +51,6 @@ resource "vcd_vm_internal_disk" "disk1" {
   unit_number     = 1
   storage_profile = "*"
   allow_vm_reboot = true
-  depends_on      = ["vcd_vapp_vm.web1"]
+#  depends_on      = ["vcd_vapp_vm.web1"]
 }
 
