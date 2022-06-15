@@ -21,6 +21,17 @@ resource "vcd_vapp_vm" "web1" {
   memory_hot_add_enabled=true
   power_on=true
 
+    override_template_disk {
+    bus_type        = "paravirtual"
+    size_in_mb      = "102400"
+    bus_number      = 0
+    unit_number     = 0
+    iops            = 0
+    storage_profile = "*"
+  }
+
+
+
   guest_properties = {
     "guest.hostname"   = "my-host"
     "another.var.name" = "var-value"
@@ -42,15 +53,4 @@ resource "vcd_vapp_vm" "web1" {
 
 }
 
-resource "vcd_vm_internal_disk" "disk1" {
-  vapp_name       = var.vapp_name
-  vm_name         = var.vm_name
-  bus_type        = "sata"
-  size_in_mb      = "51200"
-  bus_number      = 0
-  unit_number     = 1
-  storage_profile = "*"
-  allow_vm_reboot = true
-#  depends_on      = ["vcd_vapp_vm.web1"]
-}
 
