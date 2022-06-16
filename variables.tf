@@ -59,5 +59,3 @@ variable "vm_disk_size" {
     type        = string
     description = "Disk Boyutunu MB cinsinden giriniz. 1GB = 1024"
 }
-
-
