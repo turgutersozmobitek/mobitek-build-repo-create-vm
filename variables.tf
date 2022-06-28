@@ -30,9 +30,12 @@ variable "catalog_name" {
 }
 
 variable "template_name" {
-    type        = string
-    description = "Catalog içinde kullanılacak Template adını giriniz Örn: Windows2019 gibi"
+  type        = list(string)
+  description = "Catalog içinde kullanılacak Template adını giriniz Örn: Windows2019 gibi"
+  default     = ["Windows2019","Unix"]  
 }
+
+
 
 variable "vm_memory" {
     type        = string
