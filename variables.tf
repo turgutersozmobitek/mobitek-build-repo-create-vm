@@ -32,7 +32,7 @@ variable "catalog_name" {
 variable "template_name" {
   type        = list(string)
   description = "Catalog içinde kullanılacak Template adını giriniz Örn: Windows2019 gibi"
-  default     = ["Windows2019","Unix"]  
+  default     =  ["user1", "user2", "user3s"]
 }
 
 
