@@ -30,9 +30,9 @@ variable "catalog_name" {
 }
 
 variable "template_name" {
-  type        = list(string)
+  type        = string
   description = "Catalog içinde kullanılacak Template adını giriniz Örn: Windows2019 gibi"
-  default     =  ["user1", "user2", "user3s"]
+  default     = "Windows2019"
 }
 
 
