@@ -24,6 +24,11 @@ variable "vm_name" {
     description = "Oluşturulacak vM adını giriniz."
 }
 
+variable "vm_description" {
+    type        = string
+    description = "vM Açıklaması - UNMANAGED - MANAGED"
+}    
+
 variable "catalog_name" {
     type        = string
     description = "Kullanılacak imajın olduğu Catalog ismini giriniz."
