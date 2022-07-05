@@ -9,8 +9,6 @@ terraform {
 
 # Connect VMware vCloud Director Provider
 provider "vcd" {
-  user                 = var.vcd_user
-  password             = var.vcd_pass
   user                 = "administrator"
   password             = "Mob12345!"
   org                  = var.org_name
@@ -20,5 +18,3 @@ provider "vcd" {
   allow_unverified_ssl = "true"
   vdc                  = var.vdc_name
 }
-
-
