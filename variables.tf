@@ -1,17 +1,17 @@
 # vCloud Director Organization Variables
 variable "org_name" {
     type        = string
-    description = "Organization Name"
+    description = "Organizasyon İsmi:"
 }
 
 variable "vdc_name" {
     type        = string
-    description = "VM Oluşturulacak  Organizasyona Ait VDC Adını giriniz."
+    description = "VDC Adı:"
 }
 
 variable "vapp_name" {
     type        = string
-    description = "vM için kullanılacak vAPP adını giriniz*"
+    description = "VAPP Adı:*"
 }
 
 variable "org_network_name" {
