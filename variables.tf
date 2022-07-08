@@ -14,16 +14,38 @@ variable "vapp_name" {
     description = "VAPP Adı:"
 }
 
+
+variable "vm_cpu" {
+    type        = string
+    description = "CPU:"
+}
+
+variable "vm_cpu_core" {
+    type        = string
+    description = "CPU Core:"
+}
+
+
+variable "vm_memory" {
+    type        = string
+    description = "Memory:"
+}
+
+variable "vm_disk_size" {
+    type        = string
+    description = "Disk:"
+}
+
+
 variable "org_network_name" {
     type        = string
     description = "Network Adı:"
 }
 
 
-
 variable "vm_description" {
     type        = string
-    description = "Sunucu Açıklaması:"
+    description = "MANAGED/UNMANAGED:"
 }    
 
 variable "catalog_name" {
@@ -37,27 +59,6 @@ variable "template_name" {
   default     = "Windows2019"
 }
 
-
-variable "vm_cpu" {
-    type        = string
-    description = "CPU:"
-}
-
-variable "vm_cpu_core" {
-    type        = string
-    description = "CPU Core:"
-}
-
-variable "vm_disk_size" {
-    type        = string
-    description = "Disk:"
-}
-
-
-variable "vm_memory" {
-    type        = string
-    description = "Memory:"
-}
 
 
 variable "vm_ip" {
