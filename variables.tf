@@ -16,7 +16,7 @@ variable "vapp_name" {
 
 variable "org_network_name" {
     type        = string
-    description = "Netwwrk Adı:"
+    description = "Network Adı:"
 }
 
 variable "vm_name" {
