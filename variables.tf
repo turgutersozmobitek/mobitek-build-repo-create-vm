@@ -19,10 +19,7 @@ variable "org_network_name" {
     description = "Network Adı:"
 }
 
-variable "vm_name" {
-    type        = string
-    description = "Sunucu Adı:"
-}
+
 
 variable "vm_description" {
     type        = string
@@ -68,4 +65,7 @@ variable "vm_ip" {
     description = "IP Adresi:"
 }
 
-
+variable "vm_name" {
+    type        = string
+    description = "Sunucu Adı:"
+}
