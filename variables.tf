@@ -26,7 +26,7 @@ variable "vm_name" {
 
 variable "vm_description" {
     type        = string
-    description = "Sunucu AçıkLaması:"
+    description = "Sunucu Açıklaması:"
 }    
 
 variable "catalog_name" {
