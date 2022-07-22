@@ -9,6 +9,15 @@ variable "vdc_name" {
     description = "VDC Adı:"
 }
 
+variable "cd_username" {
+    type        = string
+    description = "vCenter UserName"
+}
+variable "cd_password" {
+    type        = string
+    description = "vCenter Password"
+}
+
 variable "vapp_name" {
     type        = string
     description = "VAPP Adı:"
