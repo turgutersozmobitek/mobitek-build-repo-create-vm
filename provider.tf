@@ -9,8 +9,8 @@ terraform {
 
 # Connect VMware vCloud Director Provider
 provider "vcd" {
-  user                 = "administrator"
-  password             = "Mob12345!"
+  user                 =  var_cd_username
+  password             =  var_cd_password
   org                  = var.org_name
   sysorg               = "System"
   url                  = "https://81.8.0.53/api"
