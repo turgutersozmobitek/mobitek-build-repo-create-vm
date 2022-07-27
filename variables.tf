@@ -10,7 +10,7 @@ variable "cd_password" {
 
 variable "cd_vdcadres" {
     type        = string
-    description = "vCenter Password"
+    description = "vCenter Adresi"
 }
 
 variable "org_name" {
