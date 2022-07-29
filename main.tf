@@ -27,7 +27,6 @@ resource "vcd_vapp_vm" "web1" {
     bus_number      = 0
     unit_number     = 0
     iops            = 0
-    storage_profile = "*"
   }
 
 
