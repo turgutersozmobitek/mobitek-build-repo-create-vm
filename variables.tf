@@ -1,16 +1,16 @@
 # vCloud Director Organization Variables
 variable "cd_username" {
     type        = string
-    description = "vCenter UserName"
+    description = "vCD UserName"
 }
 variable "cd_password" {
     type        = string
-    description = "vCenter Password"
+    description = "vCD Password"
 }
 
 variable "cd_vdcadres" {
     type        = string
-    description = "vCenter Adresi"
+    description = "vCD Adresi"
 }
 
 variable "org_name" {
