@@ -19,7 +19,7 @@ resource "vcd_vapp_vm" "web1" {
   cpu_cores     = var.vm_cpu_core
   cpu_hot_add_enabled=true
   memory_hot_add_enabled=true
-  power_on=true
+  power_on=false
 
     override_template_disk {
     bus_type        = "paravirtual"
